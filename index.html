@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="postlist.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+   
+    <title>Random Post List</title>
+    
+</head>
+<body class="container">
+    <h2>Random Post List</h2>
+
+    <div class="add-post">
+  
+    <div class="mb-3">
+      <h3>Add a Post</h3>
+      <label for="exampleFormControlInput1" class="form-label">Enter User Id</label>
+      <input type="number" class="form-control" id="user-id" placeholder="Enter User Id">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Enter Post Title</label>
+      <textarea class="form-control" id="post-title" placeholder="Enter Post Title"rows="3"></textarea>
+    <button id="add-new-post" class="btn btn-dark">Add New Post</button>
+</div>
+</div>
+
+<div class="update-post">
+<h3>Update a Post</h3>
+
+<label for="exampleFormControlInput1" class="form-label">Enter Post ID</label>
+<input type="number" id="post-id" placeholder="Post ID">
+<label for="exampleFormControlInput1" class="form-label">Enter Post Title</label>
+<input type="text" id="post-title" placeholder="Title">
+<button id="update-post" class="btn btn-dark">Update Post</button>
+  
+
+
+  <button id="see-all-posts" class="btn btn-dark">See All Posts</button>
+</div>
+ <ul id="post-list"></ul>
+
+
+<script src="app.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+    
+</body>
+</html>
